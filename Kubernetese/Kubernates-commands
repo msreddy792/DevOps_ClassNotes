@@ -1,0 +1,7 @@
+kubectl run nginx --image nginx
+kubectl get nodes
+kubectl get pods -o wide | grep kubeslave
+
+kubectl scale deployment web --replicas=4
+kubectl delete pod <podname>
+kubectl scale deployment web --replicas=3
